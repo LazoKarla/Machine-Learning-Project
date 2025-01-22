@@ -1,8 +1,67 @@
-html, body {
+/* Reset de márgenes y estilos básicos */
+body,
+html {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(
+    to bottom right,
+    #f8b500,
+    #f85f73
+  ); /* Fondo degradado */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
+/* Encabezado */
+#header {
+  text-align: center;
+  padding: 15px 20px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente */
+  border-radius: 10px;
+}
+
+#title {
+  margin-top: -20px; /* Mueve el título hacia arriba */
+  text-align: center;
+  font-size: 7rem; /* Título un poco más pequeño */
+}
+
+#instructions {
+  max-width: 800px; /* Ajusta el ancho deseado */
+  margin-top: -50px; /* Mueve el título hacia arriba */
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.6; /* Mejora el espacio entre líneas */
+}
+
+/* Contenedor del lienzo */
+#canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 720px; /* Tamaño más pequeño para la cámara */
+  max-height: 540px;
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Lienzo (canvas) */
 canvas {
   display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }

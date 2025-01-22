@@ -3,12 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TouchFruit</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/addons/p5.dom.min.js"></script>
     <script src="https://unpkg.com/ml5@1/dist/ml5.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="header">
+      <h1 id="title">TouchFruit</h1>
+      <p id="instructions">
+        Coloca tus manos frente a la cámara. Usa el índice y el pulgar para
+        mover las frutas en la pantalla, el punto rojo actúa como imán para
+        sostener las frutas, cuando estes cerca de una, une tus dedos y puedes
+        moverlas, para soltarlas, separa tus dedos. 🤏
+      </p>
+    </div>
+    <div id="canvas-container"></div>
     <script src="sketch.js"></script>
     <script src="magnet.js"></script>
   </body>
