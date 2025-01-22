@@ -16,7 +16,7 @@ html {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* Encabezado */
@@ -30,16 +30,16 @@ html {
 }
 
 #title {
-  margin-top: -20px; /* Mueve el título hacia arriba */
+  margin-top: -10px; /* Mueve el título hacia arriba */
   text-align: center;
-  font-size: 7rem; /* Título un poco más pequeño */
+  font-size: 5rem; /* Título un poco más pequeño */
 }
 
 #instructions {
-  max-width: 800px; /* Ajusta el ancho deseado */
+  max-width: 700px; /* Ajusta el ancho deseado */
   margin-top: -50px; /* Mueve el título hacia arriba */
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.6; /* Mejora el espacio entre líneas */
 }
 
